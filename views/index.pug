@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul 
+    each object in messages
+      each val, key in object
+        li= key + ': ' + val 
+      
